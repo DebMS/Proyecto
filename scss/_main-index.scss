@@ -1,0 +1,14 @@
+.main__index {
+  margin: 0 2em;
+  padding-top: 2em;
+  .title__h1 {
+    text-align: center;
+    color: rgb(5, 184, 255);
+    font-size: $tituloPhone;
+  }
+  .subtitle__h2 {
+    text-align: center;
+    color: rgb(5, 184, 255);
+    font-size: $subtPhone;
+  }
+}

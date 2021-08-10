@@ -122,6 +122,23 @@ nav {
   }
 }
 
+.main__index {
+  margin: 0 2em;
+  padding-top: 2em;
+}
+
+.main__index .title__h1 {
+  text-align: center;
+  color: #05b8ff;
+  font-size: 1.8rem;
+}
+
+.main__index .subtitle__h2 {
+  text-align: center;
+  color: #05b8ff;
+  font-size: 1.2rem;
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
