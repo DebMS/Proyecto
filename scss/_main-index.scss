@@ -1,14 +1,62 @@
 .main__index {
-  margin: 0 2em;
-  padding-top: 2em;
-  .title__h1 {
-    text-align: center;
-    color: rgb(5, 184, 255);
-    font-size: $tituloPhone;
+  margin: 0 1rem;
+  padding-top: 7rem;
+  .back {
+    width: 100%;
+    height: auto;
+    padding: 0;
   }
-  .subtitle__h2 {
-    text-align: center;
-    color: rgb(5, 184, 255);
-    font-size: $subtPhone;
+
+  .principal__texts {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 2em 0;
+    grid-template-areas:
+      "title"
+      "subtitle"
+      "boton";
+    .title__h1 {
+      grid-area: title;
+      margin: 1em 0;
+      text-align: center;
+      color: black;
+      font-size: $tituloPhone;
+    }
+    .subtitle__h2 {
+      grid-area: subtitle;
+      margin: 1em 0;
+      text-align: center;
+      color: $thirdColor;
+      font-size: $subtPhone;
+    }
+    .boton__contacto {
+      grid-area: boton;
+      text-decoration: none;
+      margin: 1rem auto;
+      background: black;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      padding: 1.2rem;
+      border-radius: 0.3em;
+      display: inline-block;
+      color: $thirdColor;
+      transition: all 0.2s ease-in-out;
+      height: 4rem;
+      &:hover {
+        box-shadow: -0.31em 0.31em 0.62em rgba(5, 184, 255, 0.322);
+        transform: translate(0.31em, 0.31em);
+      }
+    }
+  }
+  .novedades {
+    .novedades__titulo {
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 0 0 2rem 0;
+    }
+    .parrafo__titulo {
+      color: $thirdColor;
+    }
   }
 }
