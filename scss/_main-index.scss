@@ -1,17 +1,20 @@
 .main__index {
-  margin: 0 1rem;
   padding-top: 7rem;
+  overflow-x: hidden;
   .back {
-    width: 100%;
+    width: 90%;
     height: auto;
-    padding: 0;
+    display: block;
+    margin: 0 auto;
+    animation: aparecer 2s;
   }
 
   .principal__texts {
+    background-color: $colorWhite;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr;
-    padding: 2em 0;
+    margin: 3rem 0;
     grid-template-areas:
       "title"
       "subtitle"
@@ -20,7 +23,7 @@
       grid-area: title;
       margin: 1em 0;
       text-align: center;
-      color: black;
+      color: $secondColor;
       font-size: $tituloPhone;
     }
     .subtitle__h2 {
@@ -29,12 +32,13 @@
       text-align: center;
       color: $thirdColor;
       font-size: $subtPhone;
+      font-weight: 200;
     }
     .boton__contacto {
       grid-area: boton;
       text-decoration: none;
       margin: 1rem auto;
-      background: black;
+      background: $secondColor;
       font-size: 1.2rem;
       text-transform: uppercase;
       padding: 1.2rem;
@@ -44,7 +48,7 @@
       transition: all 0.2s ease-in-out;
       height: 4rem;
       &:hover {
-        box-shadow: -0.31em 0.31em 0.62em rgba(5, 184, 255, 0.322);
+        box-shadow: -0.31em 0.31em 0.62em $secondColor;
         transform: translate(0.31em, 0.31em);
       }
     }
@@ -54,9 +58,43 @@
       text-align: center;
       font-size: 2.5rem;
       margin: 0 0 2rem 0;
+      color: $secondColor;
     }
-    .parrafo__titulo {
-      color: $thirdColor;
+    .contenedor__parrafos {
+      margin: 0 1rem;
+      .parrafo {
+        margin-bottom: 1.5rem;
+        .parrafo__titulo {
+          color: $thirdColor;
+          margin-bottom: 0.5rem;
+        }
+        .parrafo__text {
+          margin-bottom: 0.5rem;
+        }
+        .parrafo__text--list {
+          list-style: circle;
+          margin-left: 1.5rem;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    .back {
+      width: 80%;
+      height: 80%;
+    }
+    .novedades {
+      .contenedor__parrafos {
+        max-width: 1000px;
+        margin: 0 auto;
+        .parrafo {
+          margin: 4rem 0;
+        }
+        .parrafo__titulo {
+          text-align: center;
+          padding-bottom: 1.5rem;
+        }
+      }
     }
   }
 }

@@ -11,7 +11,9 @@
 @import "main-index";
 @import "header";
 @import "footer";
+@import "animaciones";
 
 body {
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }

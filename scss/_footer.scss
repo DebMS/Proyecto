@@ -1,0 +1,27 @@
+footer {
+  background: $secondColor;
+  color: #fff;
+  text-align: center;
+  height: 14rem;
+  .icon__container {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
+    .icons a {
+      font-size: 3rem;
+      color: #fff;
+      &:hover {
+        color: $thirdColor;
+        transition: 0.3s;
+      }
+    }
+  }
+  .footer__bottom {
+    padding: 4rem;
+    background-color: #000;
+    .foot {
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+  }
+}
