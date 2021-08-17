@@ -480,6 +480,91 @@ footer .footer__bottom .foot {
   color: red;
 }
 
+.container__c {
+  padding: 1em 1em;
+  margin: 0 auto;
+}
+
+.container__c .container__contacto .form__title {
+  color: #05b8ff;
+  font-weight: 300;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 2rem;
+  border-top: 1px solid #17262b;
+}
+
+.container__c .container__contacto .form {
+  background: #d3f0ff2c;
+  width: 100%;
+  margin: 2em 0 5em 0;
+  padding: 5em 2.18em;
+  border-radius: 0.18em;
+}
+
+.container__c .container__contacto .form__label {
+  display: block;
+  font-size: 1.5rem;
+  position: relative;
+  padding: 1em 0;
+}
+
+.container__c .container__contacto .form__input {
+  background: #d3f0ffa6;
+  border: none;
+  outline: none;
+  border-bottom: 0.12em solid white;
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1.25em;
+  border-radius: 0.12em;
+  font-size: 1rem;
+}
+
+.container__c .container__contacto .form__textarea {
+  background: #d3f0ffa6;
+  border: none;
+  outline: none;
+  border-bottom: 0.12em solid white;
+  width: 100%;
+  padding: 0.75em;
+  margin-bottom: 1.25em;
+  border-radius: 0.12em;
+  font-size: 14px;
+  color: white;
+  resize: vertical;
+  max-height: 9.37em;
+  min-height: 3.12em;
+}
+
+.container__c .container__contacto .input__submit {
+  width: 100%;
+  outline: none;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  padding: 0.9em 0;
+  cursor: pointer;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#17262b), to(#d3f0ffa6));
+  background-image: linear-gradient(to bottom, #17262b, #d3f0ffa6);
+}
+
+.container__c .container__contacto .input__submit:hover {
+  -webkit-box-shadow: -0.31em 0.31em 0.62em gray;
+          box-shadow: -0.31em 0.31em 0.62em gray;
+  -webkit-transform: translate(0.31em, 0.31em);
+          transform: translate(0.31em, 0.31em);
+}
+
+@media screen and (min-width: 1024px) {
+  .container__c .container__c .container__contacto .form__title {
+    color: red;
+  }
+  .container__c .container__c .container__contacto .form {
+    background-color: red;
+  }
+}
+
 body {
   font-family: "Raleway", sans-serif;
   overflow-x: hidden;
