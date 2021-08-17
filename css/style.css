@@ -460,7 +460,19 @@ footer .footer__bottom .foot {
 @media screen and (min-width: 1024px) {
   .main__servicios .servicio__img {
     width: 50%;
-    height: auto;
+  }
+  .main__servicios .diseño {
+    width: 80%;
+    height: 80%;
+  }
+  .main__servicios .h3 {
+    font-size: 2.5rem;
+  }
+  .main__servicios .parrafo,
+  .main__servicios .subtitle__parrafo,
+  .main__servicios .items {
+    padding: 1em 4em 0 4em;
+    font-size: 1.5rem;
   }
 }
 

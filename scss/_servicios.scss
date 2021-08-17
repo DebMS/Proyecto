@@ -88,7 +88,20 @@
   @media screen and (min-width: $desktop) {
     .servicio__img {
       width: 50%;
-      height: auto;
+    }
+    .diseño {
+      width: 80%;
+      height: 80%;
+    }
+    .h3 {
+      font-size: $subtitleDesktop;
+    }
+
+    .parrafo,
+    .subtitle__parrafo,
+    .items {
+      padding: 1em 4em 0 4em;
+      font-size: $fontDesktop;
     }
   }
 }
