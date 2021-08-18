@@ -37,6 +37,10 @@
 
 .main__index .principal__texts .title__h1 {
   -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: title;
   margin: 1em 0;
@@ -46,6 +50,10 @@
 }
 
 .main__index .principal__texts .subtitle__h2 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: subtitle;
@@ -57,6 +65,10 @@
 }
 
 .main__index .principal__texts .boton__contacto {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: boton;
@@ -386,6 +398,10 @@ footer .footer__bottom .foot {
 
 .main__servicios .grid .box1 {
   -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: box1;
   display: -webkit-box;
@@ -398,6 +414,10 @@ footer .footer__bottom .foot {
 }
 
 .main__servicios .grid .box2 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: box2;
@@ -422,6 +442,10 @@ footer .footer__bottom .foot {
 }
 
 .main__servicios .grid .box3 {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  grid-column: 1;
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: box3;
@@ -557,11 +581,9 @@ footer .footer__bottom .foot {
 }
 
 @media screen and (min-width: 1024px) {
-  .container__c .container__c .container__contacto .form__title {
-    color: red;
-  }
-  .container__c .container__c .container__contacto .form {
-    background-color: red;
+  .container__c .container__contacto .form {
+    width: 70%;
+    margin: 0 auto;
   }
 }
 

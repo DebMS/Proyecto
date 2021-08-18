@@ -20,6 +20,10 @@
       "subtitle"
       "boton";
     .title__h1 {
+      grid-row: 1;
+      grid-column: 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
       grid-area: title;
       margin: 1em 0;
       text-align: center;
@@ -27,6 +31,10 @@
       font-size: $tituloPhone;
     }
     .subtitle__h2 {
+      grid-row: 1;
+      grid-column: 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
       grid-area: subtitle;
       margin: 1em 0;
       text-align: center;
@@ -35,6 +43,10 @@
       font-weight: 200;
     }
     .boton__contacto {
+      grid-row: 1;
+      grid-column: 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
       grid-area: boton;
       text-decoration: none;
       margin: 1rem auto;

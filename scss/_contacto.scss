@@ -67,9 +67,11 @@
     }
   }
   @media screen and (min-width: $desktop) {
-      .container__c{
-          padding-bottom: 2rem;
-          
+    .container__contacto {
+      .form {
+        width: 70%;
+        margin: 0 auto;
       }
-   
+    }
+  }
 }
