@@ -1,3 +1,44 @@
-.prueba {
-  color: red;
+.main__nosotros {
+  padding-top: 7em;
+  overflow-x: hidden;
+  .inicio__nosotros {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "title"
+      "subtitle";
+    .h1__nosotros {
+      grid-row: 1;
+      grid-column: 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: title;
+
+      .title__nosotros {
+        font-size: $tituloPhone;
+        margin: 1em 0;
+        text-align: center;
+        color: $secondColor;
+      }
+    }
+    .h2__nosotros {
+      grid-row: 1;
+      grid-column: 1;
+      -ms-grid-row: 1;
+      -ms-grid-column: 1;
+      grid-area: subtitle;
+
+      .subtitle__nosotros {
+        margin: 1em 0;
+        text-align: center;
+        color: $thirdColor;
+        font-size: $subtPhone;
+        font-weight: 200;
+      }
+    }
+  }
+  .presentacion {
+    background-color: red;
+  }
 }
