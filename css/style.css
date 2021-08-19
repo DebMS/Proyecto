@@ -36,7 +36,9 @@
 }
 
 .main__index .principal__texts .title__h1 {
+  -ms-grid-row: 1;
   grid-row: 1;
+  -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -48,7 +50,9 @@
 }
 
 .main__index .principal__texts .subtitle__h2 {
+  -ms-grid-row: 1;
   grid-row: 1;
+  -ms-grid-column: 1;
   grid-column: 1;
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -501,53 +505,143 @@ footer .footer__bottom .foot {
   overflow-x: hidden;
 }
 
-.main__nosotros .inicio__nosotros {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-      grid-template-areas: "title" "subtitle";
-}
-
-.main__nosotros .inicio__nosotros .h1__nosotros {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: title;
-}
-
 .main__nosotros .inicio__nosotros .h1__nosotros .title__nosotros {
   font-size: 3.2rem;
-  margin: 1em 0;
   text-align: center;
   color: #17262b;
+  -webkit-animation: aparecer 2s;
+          animation: aparecer 2s;
 }
 
-.main__nosotros .inicio__nosotros .h2__nosotros {
-  -ms-grid-row: 1;
-  grid-row: 1;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: subtitle;
+.main__nosotros .inicio__nosotros .equipo {
+  width: 90%;
+  display: block;
+  margin: 6em auto;
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
 }
 
-.main__nosotros .inicio__nosotros .h2__nosotros .subtitle__nosotros {
-  margin: 1em 0;
+.main__nosotros .inicio__nosotros .subtitle__nosotros {
+  margin: 2em 0;
   text-align: center;
   color: #05b8ff;
   font-size: 2rem;
-  font-weight: 200;
+  font-weight: 400;
+  background-color: #17262b;
+  padding: 0.5em 0;
 }
 
-.main__nosotros .presentacion {
-  background-color: red;
+.presentacion {
+  background-color: #d3f0ff;
+  padding: 1.5em;
+}
+
+.presentacion .texto__presentacion {
+  font-weight: 700;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2em 1em;
+}
+
+.presentacion .texto__presentacion-design {
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em;
+}
+
+.grid__nosotros .nosotros__box {
+  padding: 1em;
+}
+
+.grid__nosotros .nosotros__box .nosotros__presentacion {
+  border-top: 2px solid #17262b;
+  color: #17262b;
+  padding: 1em;
+  margin: 1em;
+  text-align: center;
+}
+
+.grid__nosotros .nosotros__box .nosotros__nombre {
+  color: #05b8ff;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.grid__nosotros .nosotros__box .nosotros__diseñador {
+  width: 90%;
+  height: 90%;
+  display: block;
+  margin: 0 auto;
+  -webkit-filter: brightness(0.6);
+          filter: brightness(0.6);
+}
+
+.grid__nosotros .nosotros__box .nosotros__texto {
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em;
+  font-weight: 510;
+}
+
+@media screen and (min-width: 768px) {
+  .grid__nosotros .nosotros__box {
+    display: -ms-grid;
+    display: grid;
+    gap: 20px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .grid__nosotros .nosotros__box .nosotros__diseñador {
+    -ms-grid-column: 2;
+        grid-column-start: 2;
+    grid-column-end: 3;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+    width: 90%;
+  }
+  .grid__nosotros .nosotros__box .nosotros__diseñador--img-pos {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 2;
+  }
+  .grid__nosotros .nosotros__content:first-of-type {
+    margin-top: 6em;
+  }
+  .grid__nosotros .nosotros__box--border {
+    border-top: 5px solid #3ab2e2;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1024px) {
+  .presentacion .texto__presentacion,
+  .presentacion .texto__presentacion-design {
+    text-align: left;
+    margin: 2em 6em;
+    font-size: 1.2rem;
+  }
+  .nosotros__box {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .nosotros__box .nosotros__presentacion {
+    font-size: 2.1rem;
+  }
+  .nosotros__box .nosotros__nombre {
+    font-size: 1.5rem;
+  }
+  .nosotros__box .nosotros__texto {
+    font-size: 1.2rem;
+  }
 }
 
 .container__c {
