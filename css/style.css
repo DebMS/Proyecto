@@ -627,7 +627,7 @@ footer .footer__bottom .foot {
   .presentacion .texto__presentacion-design {
     text-align: left;
     margin: 2em 6em;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .nosotros__box {
     width: 80%;
@@ -640,7 +640,7 @@ footer .footer__bottom .foot {
     font-size: 1.5rem;
   }
   .nosotros__box .nosotros__texto {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -728,24 +728,27 @@ footer .footer__bottom .foot {
 
 .main__portfolio {
   padding: 6em 0 2em 0;
+  background-color: black;
 }
 
 .main__portfolio .portfolio__principal .portfolio__titulo {
   font-size: 3.2rem;
   text-align: center;
   color: #05b8ff;
+  padding: 1em 0;
 }
 
 .main__portfolio .portfolio__principal .portfolio__presentacion {
   font-size: 1.5rem;
   text-align: left;
-  padding: 1em;
+  padding: 2em 1em;
   font-weight: 400;
+  color: #d3f0ff;
 }
 
 .main__portfolio .portfolio__container .portfolio__empresa {
   margin: 2em 0;
-  color: #17262b;
+  color: #05b8ff;
 }
 
 .main__portfolio .portfolio__container .portfolio__empresa .portfolio__name {
@@ -753,31 +756,99 @@ footer .footer__bottom .foot {
   font-size: 1.5rem;
   padding: 1em 0;
   background-color: #d3f0ff;
+  border-top: 5px solid #05b8ff;
 }
 
 .main__portfolio .portfolio__container .portfolio__empresa .portfolio__texto {
   padding: 1.2em;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen {
   padding: 2em 0.5em;
 }
 
-.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__digital {
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__digital,
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__grisino {
   width: 300px;
   height: auto;
-  background-color: black;
-  padding: 1em;
+  padding: 1em 0;
+  display: block;
+  margin: 0 auto;
 }
 
-.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__fiat {
-  width: 300px;
-  height: auto;
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__digital:hover,
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__grisino:hover {
+  -webkit-box-shadow: -0.31em 0.31em 0.62em #05b8ff;
+          box-shadow: -0.31em 0.31em 0.62em #05b8ff;
+  -webkit-transform: translate(0.31em, 0.31em);
+          transform: translate(0.31em, 0.31em);
 }
 
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__fiat,
 .main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__dakar {
   width: 300px;
   height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__fiat:hover,
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__dakar:hover {
+  -webkit-box-shadow: -0.31em 0.31em 0.62em #05b8ff;
+          box-shadow: -0.31em 0.31em 0.62em #05b8ff;
+  -webkit-transform: translate(0.31em, 0.31em);
+          transform: translate(0.31em, 0.31em);
+}
+
+@media screen and (min-width: 768px) {
+  .main__portfolio .portfolio__principal .portfolio__titulo {
+    font-size: 3.2rem;
+    text-align: center;
+    color: #05b8ff;
+    padding: 1em 0;
+  }
+  .main__portfolio .portfolio__principal .portfolio__presentacion {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2em 4em;
+    font-weight: 400;
+  }
+  .main__portfolio .portfolio__container .portfolio__empresa .portfolio__name {
+    text-align: center;
+    font-weight: 1000;
+    font-size: 2.5rem;
+    padding: 1em 0;
+    background-color: #d3f0ff;
+    border-top: 8px solid #05b8ff;
+  }
+  .main__portfolio .portfolio__container .portfolio__empresa .portfolio__texto {
+    padding: 1.2em;
+    font-size: 1.3rem;
+    text-align: center;
+    display: block;
+    margin: 0 2em;
+    font-weight: 540;
+  }
+  .main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen {
+    padding: 2em 8em;
+  }
+  .main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__digital,
+  .main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__grisino {
+    width: 500px;
+    height: auto;
+    padding: 1em;
+    display: block;
+    margin: 0 auto;
+  }
+  .main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__fiat,
+  .main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__dakar {
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 body {
