@@ -1,4 +1,51 @@
 .main__portfolio {
+  padding: 6em 0 2em 0;
+
   .portfolio__principal {
+    .portfolio__titulo {
+      font-size: $tituloPhone;
+      text-align: center;
+      color: $thirdColor;
+    }
+    .portfolio__presentacion {
+      font-size: 1.5rem;
+      text-align: left;
+      padding: 1em;
+      font-weight: 400;
+    }
+  }
+  .portfolio__container {
+    .portfolio__empresa {
+      margin: 2em 0;
+
+      color: $secondColor;
+      .portfolio__name {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1em 0;
+        background-color: $colorWhite;
+      }
+
+      .portfolio__texto {
+        padding: 1.2em;
+      }
+      .portfolio__imagen {
+        padding: 2em 0.5em;
+        .logo__digital {
+          width: 300px;
+          height: auto;
+          background-color: black;
+          padding: 1em;
+        }
+        .logo__fiat {
+          width: 300px;
+          height: auto;
+        }
+        .logo__dakar {
+          width: 300px;
+          height: auto;
+        }
+      }
+    }
   }
 }

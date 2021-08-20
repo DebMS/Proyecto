@@ -726,6 +726,60 @@ footer .footer__bottom .foot {
   }
 }
 
+.main__portfolio {
+  padding: 6em 0 2em 0;
+}
+
+.main__portfolio .portfolio__principal .portfolio__titulo {
+  font-size: 3.2rem;
+  text-align: center;
+  color: #05b8ff;
+}
+
+.main__portfolio .portfolio__principal .portfolio__presentacion {
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 1em;
+  font-weight: 400;
+}
+
+.main__portfolio .portfolio__container .portfolio__empresa {
+  margin: 2em 0;
+  color: #17262b;
+}
+
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__name {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1em 0;
+  background-color: #d3f0ff;
+}
+
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__texto {
+  padding: 1.2em;
+}
+
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen {
+  padding: 2em 0.5em;
+}
+
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__digital {
+  width: 300px;
+  height: auto;
+  background-color: black;
+  padding: 1em;
+}
+
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__fiat {
+  width: 300px;
+  height: auto;
+}
+
+.main__portfolio .portfolio__container .portfolio__empresa .portfolio__imagen .logo__dakar {
+  width: 300px;
+  height: auto;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   overflow-x: hidden;
