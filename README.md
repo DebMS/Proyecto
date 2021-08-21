@@ -3,6 +3,8 @@ El sitio web que realicé a continuación, esta compuesto por 5 paginas html (in
 
 Entre los scss realizados, se pueden verificar variables y animación por separado; también header y footer respectivamente.
 
+El menú hamburguesa sé que podria hacerlo con javascript o con bootstrap pero lo hice con html y css por lo tanto creo que no se vé como se lo realizaria con otros lenguajes.
+
 Utilicé paginas como unsplash.com para descargar las imagenes utilizadas, undraw.co para archivos SVG, GoogleFont para la fuente elegida, entre otras.
 
 Linkee todas las paginas html con style.css y normalize.css. El archivo normalize lo descargué de una libreria online y fui modificando según lo que necesitaba.
